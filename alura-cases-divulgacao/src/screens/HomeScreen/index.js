@@ -1,10 +1,11 @@
+import Head from 'next/head'
 import Footer from '../../components/patterns/Footer'
 import Link from '../../components/Link'
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
 
-const LOGO_ALURA_URL = '../../imgs/alura-logo.svg';
-const SIDE_IMAGE_URL = '../../imgs/alura-cases.png';
+const LOGO_ALURA_URL = 'images/alura-logo.svg';
+const SIDE_IMAGE_URL = 'images/alura-cases.png';
 
 function SideImage() {
   return (
@@ -96,6 +97,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+        <Head>
+            <title>Home - Alura Cases Campanha</title>
+        </Head>
       <Box
         as="main"
         styleSheet={{
